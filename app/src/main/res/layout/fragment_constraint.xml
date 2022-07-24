@@ -11,21 +11,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/constraint_fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnMaterialOne"
+        android:id="@+id/btnMaterial33"
         android:layout_width="0dp"
-        app:layout_constraintVertical_bias="0.05"
-        android:text="@string/_33_percents"
-        app:layout_constraintWidth_percent="0.33"
         android:layout_height="wrap_content"
+        android:text="@string/_33_percents"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintBottom_toTopOf="@+id/btnMaterial25"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMaterial25"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="@string/_25_percents"
+        app:layout_constraintBottom_toTopOf="@+id/btnMaterial50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaterial33"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMaterial50"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="@string/_50_percents"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMaterial25"
+        app:layout_constraintWidth_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

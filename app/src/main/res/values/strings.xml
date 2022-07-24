@@ -8,4 +8,6 @@
     <string name="coordinator">Coordinator</string>
     <string name="motion">Motion</string>
     <string name="_33_percents">33%</string>
+    <string name="_50_percents">50%</string>
+    <string name="_25_percents">25%</string>
 </resources>
