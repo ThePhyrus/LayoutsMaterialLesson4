@@ -15,23 +15,24 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Barrier
-        android:layout_width="wrap_content"
         android:id="@+id/barrierEnd"
-        app:barrierDirection="end"
-        app:constraint_referenced_ids="btn1,btn2"
-        android:layout_height="wrap_content"/>
-    <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="end"
+        app:constraint_referenced_ids="btn1,btn2" />
+
+    <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrierBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="btn1,btn2"
-        android:layout_height="wrap_content"/>
+        app:constraint_referenced_ids="btn1,btn2" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="@string/btn_1_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.17"
@@ -44,7 +45,7 @@
         android:id="@+id/btn2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="2"
+        android:text="@string/btn_2_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -57,7 +58,7 @@
         android:id="@+id/btn3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:text="@string/btn_3_text"
         app:layout_constraintStart_toStartOf="@id/barrierEnd"
         app:layout_constraintTop_toTopOf="@id/barrierBottom"
         app:layout_constraintWidth_percent="0.25" />
