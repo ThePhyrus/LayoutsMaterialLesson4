@@ -20,6 +20,16 @@ class ConstraintFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btn1.visibility = View.GONE
+        binding.btn2.visibility = View.GONE
+        binding.btn3.visibility = View.GONE
+
+        binding.buttonsGroup.visibility = View.VISIBLE
+    }
+
     companion object {
 
         @JvmStatic

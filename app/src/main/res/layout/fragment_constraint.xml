@@ -14,6 +14,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/buttonsGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="btn1,btn2,btn3" />
+
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrierEnd"
         android:layout_width="wrap_content"
@@ -62,5 +69,6 @@
         app:layout_constraintStart_toStartOf="@id/barrierEnd"
         app:layout_constraintTop_toTopOf="@id/barrierBottom"
         app:layout_constraintWidth_percent="0.25" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
