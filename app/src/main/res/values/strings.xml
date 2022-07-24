@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LayoutsMaterialLesson4</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="motion_fragment">Motion fragment</string>
+    <string name="coordinator_fragment">Coordinator fragment</string>
+    <string name="constraint_fragment">Constraint fragment</string>
+    <string name="constraint">Constraint</string>
+    <string name="coordinator">Coordinator</string>
+    <string name="motion">Motion</string>
 </resources>

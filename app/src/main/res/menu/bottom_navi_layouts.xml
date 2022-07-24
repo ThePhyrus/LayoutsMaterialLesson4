@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/constraint"
+        android:icon="@drawable/ic_constraint"
+        android:title="@string/constraint"/>
+    <item
+        android:id="@+id/coordinator"
+        android:icon="@drawable/ic_coordinator"
+        android:title="@string/coordinator"/>
+    <item
+        android:id="@+id/motion"
+        android:icon="@drawable/ic_motion"
+        android:title="@string/motion"/>
+
+
+</menu>
