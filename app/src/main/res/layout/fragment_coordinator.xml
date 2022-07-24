@@ -18,6 +18,7 @@
             style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/ic_appbar"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
@@ -36,7 +37,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior=".coordinator.behavior.NestedBehaviour"
+        app:layout_behavior=".coordinator.behavior.CollapseBehaviour"
         tools:context=".ScrollingActivity">
 
         <TextView
@@ -52,9 +53,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="0dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/plus"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
-        android:text="@string/plus"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:layout_behavior=".coordinator.behavior.AlphaBehaviour" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
