@@ -23,11 +23,11 @@ class ConstraintFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.btn1.visibility = View.GONE
-        binding.btn2.visibility = View.GONE
-        binding.btn3.visibility = View.GONE
+        binding.materialButton1.visibility = View.GONE  //не сработает, пока кнопки в единой группе  //FIXME
+        binding.materialButton2.visibility = View.GONE  //не сработает, пока кнопки в единой группе  //FIXME
+        binding.materialButton3.visibility = View.GONE  //не сработает, пока кнопки в единой группе  //FIXME
 
-        binding.buttonsGroup.visibility = View.VISIBLE
+        binding.buttons.visibility = View.VISIBLE // а так всё работает
     }
 
     companion object {

@@ -14,61 +14,159 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/buttonsGroup"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
-        app:constraint_referenced_ids="btn1,btn2,btn3" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <Button
+        android:id="@+id/parentSDuper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/parent"
+        app:layout_constraintBottom_toBottomOf="@id/guide1"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guide1"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p1"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p2"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p3"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p4"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p5"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p6"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p7"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_p8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p8"
+        app:layout_constraintCircle="@id/parentSDuper"
+        app:layout_constraintCircleAngle="315"
+        app:layout_constraintCircleRadius="130dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="materialButton1,materialButton2,materialButton3" />
 
     <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrierEnd"
+        android:id="@+id/barrier1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="end"
-        app:constraint_referenced_ids="btn1,btn2" />
+        app:constraint_referenced_ids="materialButton1,materialButton2" />
 
     <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrierBottom"
+        android:id="@+id/barrier2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
-        app:constraint_referenced_ids="btn1,btn2" />
+        app:constraint_referenced_ids="materialButton1,materialButton2" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn1"
+        android:id="@+id/materialButton1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_1_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2"
-        app:layout_constraintWidth_percent="0.4" />
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintWidth_percent="0.33" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn2"
+        android:id="@+id/materialButton2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_2_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1"
-        app:layout_constraintWidth_percent="0.2" />
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintWidth_percent="0.33" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn3"
+        android:id="@+id/materialButton3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/btn_3_text"
-        app:layout_constraintStart_toStartOf="@id/barrierEnd"
-        app:layout_constraintTop_toTopOf="@id/barrierBottom"
-        app:layout_constraintWidth_percent="0.25" />
+        app:layout_constraintStart_toStartOf="@id/barrier1"
+        app:layout_constraintTop_toTopOf="@id/barrier2"
+        app:layout_constraintWidth_percent="0.2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,4 +10,13 @@
     <string name="btn_1_text">1</string>
     <string name="btn_2_text">2</string>
     <string name="btn_3_text">3</string>
+    <string name="parent">parent</string>
+    <string name="p1">p1</string>
+    <string name="p2">p2</string>
+    <string name="p3">p3</string>
+    <string name="p4">p4</string>
+    <string name="p5">p5</string>
+    <string name="p6">p6</string>
+    <string name="p7">p7</string>
+    <string name="p8">p8</string>
 </resources>
