@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
                 else -> true
             }
         }
-        bottomNaVi.selectedItemId = R.id.motion
+        bottomNaVi.selectedItemId = R.id.coordinator
     }
 
     private fun navigateTo(frag: Fragment) {

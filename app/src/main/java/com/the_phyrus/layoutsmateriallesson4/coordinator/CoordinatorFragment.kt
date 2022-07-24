@@ -5,7 +5,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.fragment.app.Fragment
+import com.the_phyrus.layoutsmateriallesson4.coordinator.behavior.AlphaBehaviour
 import com.the_phyrus.layoutsmateriallesson4.databinding.FragmentCoordinatorBinding
 
 class CoordinatorFragment : Fragment() {
@@ -24,10 +26,12 @@ class CoordinatorFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.fab.setOnClickListener {
+        binding.alphaButton.setOnClickListener {
             Log.d("@@@", "onViewCreated: хахаха") //невидимая кнопка всё равно жмётся))
         }
-
+        val params = (binding.alphaButton.layoutParams as CoordinatorLayout.LayoutParams)
+        params.behavior = AlphaBehaviour(requireContext())
+        binding.alphaButton.layoutParams = params
     }
 
     companion object {
