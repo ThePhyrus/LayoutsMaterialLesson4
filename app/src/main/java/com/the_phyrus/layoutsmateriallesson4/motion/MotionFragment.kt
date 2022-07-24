@@ -1,4 +1,4 @@
-package com.the_phyrus.layoutsmateriallesson4.fragments
+package com.the_phyrus.layoutsmateriallesson4.motion
 
 import android.os.Bundle
 import android.view.LayoutInflater

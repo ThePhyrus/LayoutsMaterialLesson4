@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import com.the_phyrus.layoutsmateriallesson4.databinding.ActivityMainBinding
-import com.the_phyrus.layoutsmateriallesson4.fragments.ConstraintFragment
-import com.the_phyrus.layoutsmateriallesson4.fragments.CoordinatorFragment
-import com.the_phyrus.layoutsmateriallesson4.fragments.MotionFragment
+import com.the_phyrus.layoutsmateriallesson4.constraint.ConstraintFragment
+import com.the_phyrus.layoutsmateriallesson4.coordinator.CoordinatorFragment
+import com.the_phyrus.layoutsmateriallesson4.motion.MotionFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
