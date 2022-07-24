@@ -1,6 +1,7 @@
 package com.the_phyrus.layoutsmateriallesson4.coordinator
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +19,15 @@ class CoordinatorFragment : Fragment() {
     ): View {
         _binding = FragmentCoordinatorBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.fab.setOnClickListener {
+            Log.d("@@@", "onViewCreated: хахаха") //невидимая кнопка всё равно жмётся))
+        }
+
     }
 
     companion object {
